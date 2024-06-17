@@ -53,6 +53,35 @@ Heading tags like <h1>, <h2>, <h3>, etc.
 
   /* #F5AE32 amarelo
   #5A0891 roxo*/
+
+  
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
 </style>
 <body>
 
@@ -60,6 +89,12 @@ Heading tags like <h1>, <h2>, <h3>, etc.
   
 INCLUSÃO GEEK
   </header>
+  <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a class="active" href="#about">About</a></li>
+</ul>
 <p>Se você gosta de jogos eletrônicos, filmes, livros, séries e tecnologia, prepare-se para uma nova maneira de consumir conteúdo da cultura geek.
 
 <p>O Inclusão Geek é um coletivo que busca amplificar a voz das pessoas com deficiência e de outros grupos que frequentemente não têm a oportunidade de espaço na mídias.
